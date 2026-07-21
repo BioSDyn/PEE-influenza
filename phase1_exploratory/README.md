@@ -25,9 +25,10 @@ Este análisis busca generar el conjunto de datos y el entendimiento de patrones
 
 ​```
 phase1_exploratory/
+
 ├── data/
-│   ├── raw/          # datos SISVER y coberturas, sin procesar, que se pueden obtenes y descargar libremente (ver documentación)
+│   ├── raw/          # datos SISVER y coberturas, sin procesar (ver documentación)
 │   └── processed/    # datos limpios, listos para análisis
-├── codes/            # funciones de limpieza y procesamiento reutilizables, exploración y visualización 
+├── codes/            # funciones reutilizables, exploración y visualización 
 └── figures/          # gráficas de estacionalidad y patrones por edad/subtipo
 ​```
