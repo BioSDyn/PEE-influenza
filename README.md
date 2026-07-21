@@ -16,20 +16,20 @@ Desarrollo de un modelo mecanístico determinista, calibrado con los datos y pat
 
 ## Datos
 
-Los datos utilizados provienen del sistema de vigilancia **SISVER** para las temporadas 2024–2025 y 2025–2026 (casos sintomáticos, hospitalizados y defunciones, estratificados por grupo de edad y subtipo viral), coberturas de vacunación 2022–2024, y parámetros epidemiológicos y matrices de contacto reportados en la literatura.
+Los datos utilizados provienen del sistema de vigilancia **SISVER** para las temporadas 2024–2025 y 2025–2026 (casos sintomáticos, hospitalizados y defunciones, estratificados por grupo de edad y subtipo viral), coberturas de vacunación 2022–2024, parámetros epidemiológicos y matrices de contacto reportados en la literatura.
 
 ## Cómo navegar este repositorio
 
 - Empieza por el README de cada fase (`phase1_exploratory/README.md`, `phase2_dynamical_modeling/README.md`) para el detalle de objetivos, datos y estructura interna.
-- Los notebooks dentro de cada fase están numerados en el orden sugerido de ejecución.
-- Las funciones reutilizables (limpieza, procesamiento, modelado) viven en `src/` de cada fase, separadas de los notebooks exploratorios.
+- Los codigos dentro de cada fase están numerados en el orden sugerido de ejecución.
+- Las funciones reutilizables (limpieza, procesamiento, modelado) se desarrollan de manera independiente en cada fase.
 
 ## Instalación
 
 ​```bash
 git clone https://github.com/BioSDyn/PEE-influenza.git
 cd PEE-influenza
-# instrucciones de entorno (pendiente: environment.yml / requirements.txt)
+# instrucciones de entorno (pendiente)
 ​```
 
 ## Citación / Reconocimiento
