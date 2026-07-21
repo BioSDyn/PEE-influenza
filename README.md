@@ -26,11 +26,10 @@ Los datos utilizados provienen del sistema de vigilancia **SISVER** para las tem
 
 ## Instalación
 
-​```bash
+​\`\`\`bash
 git clone https://github.com/BioSDyn/PEE-influenza.git
 cd PEE-influenza
-```
-​
+\`\`\`
 
 ## Citación / Reconocimiento
 
