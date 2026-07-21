@@ -29,8 +29,8 @@ Los datos utilizados provienen del sistema de vigilancia **SISVER** para las tem
 ​```bash
 git clone https://github.com/BioSDyn/PEE-influenza.git
 cd PEE-influenza
-# instrucciones de entorno (pendiente)
-​```
+```
+​
 
 ## Citación / Reconocimiento
 
