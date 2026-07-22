@@ -129,7 +129,9 @@ weekly_sub <- data_flu |>
   arrange(flu_season, epi_week_ord)
 
 # Eje x: secuencia completa de semanas de la temporada
-flu_wks_completo     <- get_flu_weeks(unique(weekly_sub$epi_week))
+#flu_wks_completo     <- get_flu_weeks(unique(weekly_sub$epi_week))
+flu_wks_completo     <- unique(weekly_sub$epi_week)
+
 epi_week_ord_completo <- seq_along(flu_wks_completo)
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -148,16 +150,16 @@ p_sub_stack <- ggplot(
     labels = flu_wks_completo,
     expand = c(0.02, 0)
   ) +
-  scale_fill_manual(name = "Subtipo", values = paleta_subtipos) +
+  scale_fill_manual(name = "Subtype", values = paleta_subtipos) +
   scale_y_continuous(
     labels = comma_format(),
     expand = expansion(mult = c(0, 0.05))
   ) +
   labs(
-    title   = "Casos confirmados de influenza por subtipo",
-    x       = "Semana epidemiológica",
-    y       = "Casos confirmados",
-    caption = "Fuente: SISVER — temporadas 2024-2025 y 2025-2026"
+    title   = "Confirmed influenza cases by subtype",
+    x       = "Epidemiological week",
+    y       = "Confirmed cases",
+    caption = "Source: SISVER — 2024-2025 and 2025-2026 seasons"
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -168,7 +170,6 @@ p_sub_stack <- ggplot(
     legend.position    = "bottom"
   ) +
   guides(fill = guide_legend(nrow = 1))
-
 p_sub_stack
 
 ggsave(paste0(fig_path, "ts_flu_subtipos_stack.png"),
