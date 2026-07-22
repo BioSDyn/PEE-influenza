@@ -1,0 +1,26 @@
+{
+    "id": "6DD68F15",
+    "path": "C:/Users/Imelda/flu2026/PEE-influenza/phase1_exploratory/codes/07.flu_time_series_subtype.R",
+    "project_path": "codes/07.flu_time_series_subtype.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": true,
+    "created": 1784758974998.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "177,0",
+        "scrollLine": "159"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1784759648,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1784761772688,
+    "read_only": false,
+    "read_only_alternatives": []
+}

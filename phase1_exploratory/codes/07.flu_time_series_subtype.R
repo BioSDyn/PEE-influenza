@@ -1,7 +1,7 @@
 # ══════════════════════════════════════════════════════════════════════════════
 # SCRIPT 03c: Visualización de subtipos de influenza
 # Proyecto apoyado por la "Secihti" en el año 2025
-# Last update: June 2026
+# Last update: July 2026 by Imelda Trejo
 # ══════════════════════════════════════════════════════════════════════════════
 
 rm(list = ls())
@@ -13,12 +13,13 @@ library(forcats)
 library(knitr)
 library(kableExtra)
 library(scales)
-source("scripts/functions_sisver.R")
+library(readr)
+source("codes/functions_sisver.R")
 
 # ── Config ────────────────────────────────────────────────────────────────────
 input_path <- "data/processed/"
-fig_path   <- "figures/time_series/"
-table_path <- "figures/tables/"
+fig_path   <- "figures/"
+table_path <- "figures/"
 
 # ══════════════════════════════════════════════════════════════════════════════
 # 1. CATÁLOGO DE SUBTIPOS
@@ -62,14 +63,16 @@ catalogo_subtipos <- tibble(
 # 2. LECTURA Y PREPARACIÓN DE DATOS
 # ══════════════════════════════════════════════════════════════════════════════
 
-data_all <- readRDS(paste0(input_path, "vigilancia_analytic.rds"))
+data_all <- readRDS(paste0(input_path, "flu_analytic.rds"))
+#data_all  <- read_csv("data/processed/flu_clean.csv")
+
 
 data_flu <- data_all |>
   filter(
-    CLASIFICACION_FINAL_FLU == "Confirmado",
+    influenza_pcr == "Positive",
     flu_season %in% c("2024-2025", "2025-2026"),
     !is.na(flu_season),
-    !is.na(GRUPO_EDAD)
+    !is.na(age_group)
   ) |>
   mutate(
     RESULTADO_PCR = as.character(RESULTADO_PCR),
