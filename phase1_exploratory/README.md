@@ -19,7 +19,7 @@ Aunque México implementa anualmente una campaña de vacunación gratuita dirigi
 
 ## Por qué esto importa para la Fase 2
 
-Este análisis busca generar el conjunto de datos y el entendimiento de patrones (estacionalidad, magnitud de ondas epidémicas, heterogeneidad por edad/subtipo) que informará las decisiones de estructura y calibración del modelo de [Fase 2 — Modelado Dinámico](../phase2_dynamical_modeling), usado para explorar escenarios de influenza estacional bajo distintas estrategias de vacunación.
+Este análisis busca generar el conjunto de datos y el entendimiento de patrones (estacionalidad, magnitud de ondas epidémicas, heterogeneidad por edad/subtipo) que informará las decisiones de estructura y calibración del modelo de [Fase 2 — Modelado Dinámico](../phase2_dynamics), usado para explorar escenarios de influenza estacional bajo distintas estrategias de vacunación.
 
 ## Estructura de esta fase
 
