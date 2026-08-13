@@ -4,7 +4,7 @@
 # Last update: July 21 2026 by Imelda Trejo
 #
 # Data Source: CONAPO Proyecciones de Población 2025
-#   https://datos.gob.mx/busca/dataset/proyecciones-de-la-poblacion-de-mexico
+#   https://www.datos.gob.mx/dataset/proyecciones-de-poblacion
 #
 # INPUT:
 #   data/raw/0_Pob_Inicio_1950_2070.xlsx
