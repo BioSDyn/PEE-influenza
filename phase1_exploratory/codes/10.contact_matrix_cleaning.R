@@ -53,7 +53,7 @@ population_all <- read_excel("data/0_Pob_Inicio_1950_2070 (proyeccion conapo par
 # Collapse the 16x16 contact matrix onto 4x4 contact matrices 
 #====================================================================
 
-#old population group
+#population group definition accordingly to Prem
 
 age_group_labels_prem <- unique(contact_matrix$age_contactor)
 
@@ -62,14 +62,14 @@ age_group_breaks_prem <- c(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,200)
 population_by_age_prem <- grouping_age(age_group_breaks_prem,age_group_labels_prem,population_all)
 
 
-# new population subgroups  
+# new age groups defined by union of prem age groups, it is important to use similar notation as prem labels like: "0 to 4"
 
 subgroups <- list(
-  "grp1: 0-4 years" = c("0 to 4"), #children
+  "grp1: 0-4 years" = c("0 to 4"), 
   "grp2: 5-19 years" = c("5 to 9", "10 to 14", "15 to 19"),
-  "grp3: 20-64 years" = c("20 to 24", "25 to 29", "30 to 34", "35 to 39", #youth
+  "grp3: 20-64 years" = c("20 to 24", "25 to 29", "30 to 34", "35 to 39", 
                "40 to 44", "45 to 49", "50 to 54", "55 to 59", "60 to 64"),
-  "grp4: 65+ years" = c("65 to 69", "70 to 74", "75+") #older_adults
+  "grp4: 65+ years" = c("65 to 69", "70 to 74", "75+") 
 )
 
 # alternative labels from  'age0to4','age5to19','age20to64','age65plus'
